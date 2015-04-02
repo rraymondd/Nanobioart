@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Noralighting.comModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ItemCode" />
+    </Key>
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="ItemCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemType" Type="int" />
+    <Property Name="IsVisible" Type="bit" Nullable="false" />
+    <Property Name="AddedDate" Type="datetime" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SpecSheet" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IESData" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="INSSheet" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RelatedKeywords" Type="nvarchar" MaxLength="2000" Nullable="false" />
+    <Property Name="MetaKeywords" Type="nvarchar" MaxLength="2000" Nullable="false" />
+    <Property Name="MetaDescription" Type="nvarchar" MaxLength="2000" Nullable="false" />
+    <Property Name="ProductApplication" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="NoralightingcomModelStoreContainer">
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

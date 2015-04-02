@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Noralighting.comModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Query">
+    <Key>
+      <PropertyRef Name="ItemCode" />
+    </Key>
+    <Property Name="ItemCode" Type="String" MaxLength="55" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ItemType" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Queries" EntityType="Self.Query" />
+  </EntityContainer>
+</Schema>

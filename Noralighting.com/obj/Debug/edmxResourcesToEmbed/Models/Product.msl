@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NoralightingcomModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Noralighting.comModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="IsVisible" ColumnName="IsVisible" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SpecSheet" ColumnName="SpecSheet" />
+          <ScalarProperty Name="IESData" ColumnName="IESData" />
+          <ScalarProperty Name="INSSheet" ColumnName="INSSheet" />
+          <ScalarProperty Name="RelatedKeywords" ColumnName="RelatedKeywords" />
+          <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="ProductApplication" ColumnName="ProductApplication" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
